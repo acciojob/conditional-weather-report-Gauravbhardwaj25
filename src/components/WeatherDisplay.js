@@ -1,10 +1,10 @@
 function WeatherDisplay() {
 
-    const { Temperature, Conditions } = Weather;
+    const { Temperature, Conditions } = weather;
 
 
     const temStyle = {
-        color: Temperature > 20 ? "red" : "blue"
+        color:weather.Temperature > 20 ? "red" : "blue"
     };
     return (
 
