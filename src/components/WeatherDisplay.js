@@ -1,19 +1,17 @@
-function WeatherDisplay() {
+import React from "react";
 
-    const { Temperature, Conditions } = Weather;
-
+function WeatherDisplay({ weather }) {
+    const { temperature, conditions } = weather;
 
     const temStyle = {
-        color: Temperature > 20 ? "red" : "blue"
+        color: temperature > 20 ? "red" : "blue"
     };
     return (
-
         <>
-            <p>Temperature : <spam style={temStyle}>{Temperature}</spam> </p>
-            <p>Conditions: {Conditions}</p>
+            <p>Temperature : <span style={temStyle}>{temperature}</span> </p>
+            <p>Conditions: {conditions}</p>
         </>
     )
 }
-
 
 export default WeatherDisplay;

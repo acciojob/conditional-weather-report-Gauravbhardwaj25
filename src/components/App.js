@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <WeatherDisplay weather={weather} />
+      <WeatherDisplay weather={weather}></WeatherDisplay>
     </div>
   );
 }
