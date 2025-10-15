@@ -14,8 +14,8 @@ const App = () => {
 
   return (
     <div>
-      <WeatherDisplay weather={weather}></WeatherDisplay>
-      <WeatherDisplay weatherData={weatherData} />
+      {/* <WeatherDisplay weather={weather}></WeatherDisplay> */}
+      <WeatherDisplay weather={weatherData} />
     </div>
   );
 };
