@@ -8,13 +8,13 @@ const App = () => {
     conditions: ""
   });
 
+  // Simulate loading of static weather data
   useEffect(() => {
     setWeatherData({ temperature: 25, conditions: "Sunny" });
   }, []);
 
   return (
     <div>
-      {/* <WeatherDisplay weather={weather}></WeatherDisplay> */}
       <WeatherDisplay weather={weatherData} />
     </div>
   );
